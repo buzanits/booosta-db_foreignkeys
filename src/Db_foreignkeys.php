@@ -1,9 +1,12 @@
 <?php
 namespace booosta\db_foreignkeys;
 
+use \booosta\Framework as b;
+b::init_module('db_foreignkeys');
+
 class Db_foreignkeys extends \booosta\base\Module
 {
-  #use moduletrait_db_foreignkeys;
+  use moduletrait_db_foreignkeys;
 
   protected $data;
 
